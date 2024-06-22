@@ -1,5 +1,5 @@
 package Banco;
-public class Main {
+public class Teste {
 
 	public static void main(String[] args) {
 		Cliente alexandre = new Cliente();
