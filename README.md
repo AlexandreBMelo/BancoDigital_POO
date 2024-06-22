@@ -3,6 +3,17 @@
 
 Este projeto implementa uma estrutura básica de banco em Java, focada na criação e gerenciamento de contas bancárias através de classes que representam o banco, tipos de contas e clientes.
 
+## Interface `IConta` (`IConta.java`)
+
+A interface `IConta` define os métodos que todas as contas bancárias devem implementar para garantir um comportamento padrão.
+
+#### Métodos:
+
+- `sacar(double valor)`: Permite sacar um valor da conta.
+- `depositar(double valor)`: Permite depositar um valor na conta.
+- `transferir(double valor, Conta contaDestino)`: Permite transferir um valor para outra conta.
+- `imprimirExtrato()`: Método para imprimir o extrato da conta.
+
 ## Classes Principais
 
 ### Banco (`Banco.java`)
