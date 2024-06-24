@@ -3,21 +3,20 @@ package Banco;
 public abstract class Conta implements IConta {
 
     //atributos 
-    private static int SEQUENCIAL = 1;
+    private static int SEQUENCIAL = 4050;
     private static final int AGENCIA_PADRAO = 1;
 
     protected int agencia;
     protected int contaNumero;
     protected double saldo;
+    protected int senha;
     protected Cliente cliente;
 
-   
-
-   
-public Conta(Cliente cliente) {
+public Conta(Cliente cliente, int senha) {
         this.agencia = AGENCIA_PADRAO;
         this.contaNumero = SEQUENCIAL++;
         this.cliente = cliente;
+        this.senha = senha;
     }
     // Métodos
     @Override
@@ -47,9 +46,18 @@ public Conta(Cliente cliente) {
     public int getContaNumero() {
         return contaNumero;
     }
+    public int getSenha() {
+        return senha;
+    }
+    public void setSenha(int senha) {
+        this.senha = senha;
+    }
     public double getSaldo() {
         return saldo;
     }
+   
+    
+
     
 
     

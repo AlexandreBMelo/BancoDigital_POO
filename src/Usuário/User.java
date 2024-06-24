@@ -1,9 +1,11 @@
 package Usuário;
 
+import Banco.Banco;
 
 public class User extends InterfaceUsuario{
     public static void main(String[] args) {
-        menuPrincipal();
+        Banco banco = new Banco("XBANK");
+        menuPrincipal(banco);
 
     }
 }

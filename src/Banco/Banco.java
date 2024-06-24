@@ -28,5 +28,18 @@ public class Banco {
         this.contas.add(conta);
     }
 
+    public Conta procurarContaNomeSenha(double contaNumero, int senha){
+        Conta contaLogin = null;
+        if (!contas.isEmpty()){
+            for (Conta conta: contas){
+                if (conta.getContaNumero() == contaNumero && conta.getSenha() == senha){
+                    contaLogin = conta;
+                }
+                break;
+            } 
+        }
+        return contaLogin;
+    }
+
 
 }

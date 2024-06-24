@@ -3,6 +3,7 @@ public class Cliente {
     // atributos
     private String nome;
     // getters e setters
+  
 
     public String getNome() {
         return nome;
